@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap');
 
 :root {
-    --primary-color: #155969;
+    --primary-color: #0c4754;
     --secondary-color: red;
 }
 
@@ -81,7 +81,7 @@ main #home #left-container {
     color: white;
     width: 70%;
     height: 100%;
-    background: linear-gradient(to bottom, var(--primary-color), #278499, #36a2ba);
+    background: linear-gradient(to right,#aa146c , #e0493e, #683bdd);
     justify-content: center;
     align-items: center;
     align-content: center;
@@ -114,10 +114,10 @@ main #home #left-container #load {
     width: 5vw;
     height: 5vw;
     margin-top: 5vw;
-    border-bottom: groove 0.8vw red;
+    border-bottom: dashed 0.8vw red;
     border-left: groove 0.8vw red;
     border-radius: 90%;
-    animation: loader 2.5s infinite alternate ease-in-out;
+    animation: loader 2.5s infinite alternate-reverse ease-in-out;
 }
 
 @keyframes loader {
