@@ -76,12 +76,27 @@ main #home {
 
 main #about {
     display: flex;
-    background: linear-gradient(to bottom, #1c609d, #6412ea , #482569);
+    background: linear-gradient(-20deg, #ee7752, #4b2a9f, #b01d1d, #ed3939);
+    background-size:  300% 300%;
+    animation: gradient 2s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
 
 main #about #left-container {
     width: 30%;
     background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(5px);
 }
 
 main #about #left-container #photo-container #photo{
@@ -91,8 +106,9 @@ main #about #left-container #photo-container #photo{
     background-position: center;
     background-size: cover;
     border-radius: 50%;
-    border-bottom: groove 0.8vw #6412ea;
-    border-right: groove 0.8vw #6412ea;
+    border-bottom: groove 0.8vw;
+    border-right: groove 0.8vw;
+    border-color: var(--secondary-color);
 }
 
 main #about #left-container #photo-container{
@@ -182,9 +198,6 @@ main #home #right-container {
     
 }
 
-main #about {
-    background-color: greenyellow;
-}
 main #habilities {
     background-color: pink;
 }
