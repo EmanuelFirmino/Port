@@ -102,7 +102,7 @@ main #about #left-container {
 main #about #left-container #photo-container #photo{
     width: 12.5vw;
     height: 12.5vw;
-    background-image: url('/static/img/unnamed.jpg');
+    background-image: url('./static/img/unnamed.jpg');
     background-position: center;
     background-size: cover;
     border-radius: 50%;
@@ -193,7 +193,7 @@ main #home #left-container #load {
 }
 
 main #home #right-container {
-    background-image:url('/static/img/home.jpg');
+    background-image:url('./static/img/home.jpg');
     background-position: center;
     background-size: cover;
     width: 30%;
